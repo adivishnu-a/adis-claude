@@ -25,7 +25,7 @@ Before implementing:
 - If multiple interpretations exist, present them - don't pick silently.
 - If a simpler approach exists, say so. Push back when warranted.
 - If something is unclear, stop. Name what's confusing. Ask.
-- For key technical or architectural decisions that hinge on current facts (a framework's recommended setup, a library's API, what a version supports), check the latest official docs on the web rather than relying on training data alone. Not needed for routine work.
+- For key technical or architectural decisions that hinge on current facts (a framework's recommended setup, a library's API, what a version supports), check the latest official docs on the web rather than relying on training data alone.
 
 ## 2. Simplicity First
 
