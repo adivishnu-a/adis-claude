@@ -10,6 +10,8 @@ My global `CLAUDE.md` for Claude Code: always-on behavioral guidelines that appl
 2. **Frontend & UI design** — decide before drawing, commit to a direction, craft-floor checks, operate-mode rules, hardening, copy, and a list of defaults to refuse.
 3. **UX psychology & conversion** — ask easy questions, be specific, safety nets over sales pitches, reduce decisions, give before you ask, frame honestly, the action area.
 
+`AGENTS.md` is the same content for tools that read the AGENTS.md convention (Cursor, Codex, Copilot, etc.). `CLAUDE.md` is the source of truth; if you edit one, mirror the change in the other.
+
 Sources are credited in the header comment of `CLAUDE.md`.
 
 ## Install
