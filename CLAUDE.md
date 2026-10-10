@@ -83,6 +83,8 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 
 Applies whenever you build or edit anything a user sees: pages, components, dashboards, forms, emails, artifacts. Every model trained on the same SaaS templates; without these rules you ship the same tells on every project.
 
+This includes planning, discussing, reviewing, or critiquing anything a user sees, before any file exists. The UX Psychology, Interface Patterns, and Mobile parts below apply on the same trigger.
+
 **Tradeoff:** These bias toward committed, distinctive craft over safe defaults. The brief always wins: a pinned font, palette, era, or aesthetic overrides any rule below. Redirecting a clear brief toward your own taste is failure.
 
 ## 5. Decide Before You Draw
@@ -271,6 +273,133 @@ Applies to any flow where a user decides, commits, signs up, pays, or completes 
 - Headlines attract, body supports: give body copy generous leading and a step lower contrast than the title so the eye tracks and hierarchy holds. Small uppercase labels get letter-spacing so they breathe.
 - UI color supports the product; it never competes with it. Soften saturated chrome so the thing being sold is the brightest object on the screen.
 
+## 19. Meet Users Where They Are
+
+**Intent you can see is a question you can answer before it's asked.**
+
+- New users get one goal to set and a few easy starting points, no dense metrics. Returning users get today's task first with its specifics (duration, calories), no onboarding banners. Power users get stats and trends up top.
+- Adapt what fills the screen, never where things live, or the familiarity the user earned resets.
+- A focused search field shows recent searches, popular items, and personal suggestions until the user types.
+- After a commitment (paid, submitted, booked), the waiting screen answers the anxious questions unprompted: status in plain words first ("Your order is on the way"), a stage timeline instead of raw dates, and the person handling it with name, photo, and a way to call or message.
+
+## 20. Fit the Control to the Task
+
+**Choose inputs by the answer's shape, not novelty.**
+
+- Approximate, bounded values (age, height, hours slept): slider or wheel, no keyboard.
+- Exact values (350 g, a price, an amount to send): a numeric field with the number pad, plus a stepper when nudges are common. Dragging to an exact integer charges friction on every use.
+- Small discrete counts (bedrooms, guests): visible pills, not a stepper that hides the neighbors.
+- Categorical answers (job title, interests): icon chips for the common answers, "Other" opening search or a field. Free text costs typing and returns inconsistent data.
+- A short set of distinct options (a goal, a plan): selectable cards with an icon. Long or homogeneous lists stay lists.
+- The value the task is about is the focal point: the amount, large and centered, with currency riding inside it, preset to the likely default.
+- After input, reflect the value back against the user's last entry ("2 hours more than last night") with one next step ("aim for 8").
+
+## 21. Recognize, Don't Recall
+
+**Faces, names, and the after-state on screen, so the user never works from memory.**
+
+- People appear with their photo, brands with their logo. An initial in a circle is the fallback; an account number alone is never enough.
+- Before an irreversible commit, show the after-state: balance now and after, the from-account and to-account each badged (Personal, Business).
+
 ---
 
 **The test:** Read every screen as a conversation. Is each element answering the user's hidden question, or asking them to do homework? Would they feel safe, or sold? Fully informed, would they thank you for the framing? Users don't make logical decisions; they react to how the choice is built. Build it so the honest choice is also the easy one.
+
+---
+
+# Interface Patterns
+
+Applies to the screens people scan and narrow: lists, feeds, dashboards, search, and filters.
+
+**Tradeoff:** These favor patterns users already know from shipped products. Before inventing one, look at how the category leaders solve it (Mobbin and similar libraries) and invent only where they all fall short.
+
+## 22. Rank, Then Style
+
+**List every element by what the user came for, then spend size, weight, and color in that order.**
+
+- The value outranks its label: "591" large, "Sales" small beneath it.
+- Titles, metadata, and badges each take a distinct step in size, weight, or color, so a list is scanned, not read.
+- Media that sells (food, homes, products) gets room; a 56px bowl of ramen sells nothing. Don't shrink rows to fit more above the fold: people scroll, and the first item's job is to earn the scroll.
+- Text about an image sits below it, never on it, so any uploaded photo leaves it legible.
+- Category art never competes with the content it leads to: custom icons, or one isolated image style.
+- One corner-radius scale across cards, chips, and images. Shadows take the hue of the surface they fall on, never pure gray or black on color.
+- When no single density serves everyone, offer a toggle: large cards to browse, compact rows to compare.
+
+## 23. Filters Are Decision Support
+
+**A filter's job is to show trade-offs, not just hide rows.**
+
+- Common filters are visible chips on the results screen. The full set lives on one sheet over the results, never in a dropdown or a page per filter.
+- Show counts everywhere: the set ("640 places"), the apply button ("Show 41 homes"), and each option before it's picked ("3+ beds · 459").
+- Minimums are inclusive ("3+"), so wanting three bedrooms doesn't hide four.
+- A range slider shows the distribution behind it, so the user sees when stretching the budget slightly unlocks many more results.
+- Accept limits in the user's own terms and convert them: a deposit and a monthly payment become a price ceiling on the same histogram.
+
+## 24. Put the Value on Screen
+
+**Every tap between the user and the good part is a chance to leave.**
+
+- Content and likely picks live on the screen, not behind a banner or a button: the top ten recipes, not "Discover 100+ recipes"; recent recipients as avatars beside the search field.
+- Empty screens point forward. First run: frame the outcome ("Start managing your projects"), give one or two tips, and highlight the primary action, named for what it does ("Create project"). Zero results: name the query, suggest a fix (typo, broader term), and offer a one-tap clear.
+
+## 25. Polish Where It's Felt
+
+**Users feel effort they can't name. Spend it where they touch the product.**
+
+- When the app changes the user's content (summarize, autocorrect, sort, import), show the change happening in place. An instant swap gets missed; a toast only reports it.
+- Capture (camera, scanner, voice) happens in the app's own interface, styled like the rest of the product, not in a stock system modal that feels like leaving.
+
+---
+
+**The test:** Glance at the screen for two seconds. Can the user tell what matters most, how much there is, and what to tap next?
+
+---
+
+# Mobile & Touch UI
+
+Applies to native apps and to any web surface used mostly on a phone. Mobile is not desktop made smaller: it has its own navigation, its own scale, one thumb, and one task at a time.
+
+**Tradeoff:** These favor platform convention over invention. Users bring muscle memory from every other app on their phone; a novel pattern costs them before it can delight them.
+
+## 26. Rebuild, Don't Shrink
+
+**A narrow column and a thumb need their own layout, not the desktop one scaled down.**
+
+- Primary actions sit in the lower half, where the thumb rests. The top edge holds titles and rarely used controls.
+- Type and spacing hold their size or grow; never shrink them to fit more. iOS body is 17pt against macOS's 13pt because a phone is held at arm's length and hit with a finger.
+- One direction per section: it stacks vertically or scrolls horizontally, never both.
+- Cards are mobile's grouping primitive, standing in for the whitespace desktop gets free. Inside a card, group with spacing or a divider, never another card.
+
+## 27. One Screen, One Job
+
+**A settings screen is settings. An editor is an editor.**
+
+- Don't pad a focused screen with suggestions, templates, or recents. Move them to a sub-page or an overlay.
+- When it can't happen inline, a secondary task opens in a bottom sheet over the current view, not a new full screen, so the user keeps their place. Sheets resize and dismiss with a downward swipe.
+- Chrome is transient: an editor hides the bottom nav and brings its own tools; a selection mode shows only confirm and close.
+
+## 28. Gestures With Weight
+
+**Physics makes it feel native. Every gesture still has a visible control that does the same thing, because gestures can't be discovered.**
+
+- Swipe right to go back: the top screen tracks the finger while the one beneath slides in from about 35% offset.
+- A bottom sheet rising scales the view behind it down slightly; dismissing reverses it.
+- Long press is mobile's right-click: blur the background, lift and scale the item, show a preview with quick actions.
+
+## 29. The Bottom Bar Is the App's Spine
+
+**Only top-level, high-frequency destinations earn a tab.**
+
+- 3–4 tabs, 5 at most. With more top-level sections than that, make the sidebar the home screen: recents on top, counts and actions right-aligned, search or the primary action at the bottom (the Notion pattern).
+- Tabs are destinations: Home, Search, Create, Inbox, Profile. Help, legal, and log out live in settings. Back arrows and logos stay at the top, where every other app puts them (Jakob's law).
+- A primary action (Create, Post, Order) may take the center slot, where either thumb reaches it.
+- Icons around 24px inside a 44×44 target. One-word labels at 10–12px that never wrap; keep them unless the audience reads the icons fluently.
+- The active tab changes at least two things: outline to filled, plus accent color and a heavier label. Inactive icons are all outlined, one style, still ≥3:1.
+- Neutral bar, one accent for the active tab, never a color per tab. Separate it from scrolling content with one of: a top hairline, a background step, or a soft upward shadow.
+- The bar's background runs to the screen edge; its targets sit above the home indicator (34pt on iOS), or taps become home swipes.
+- Badges sit top-right of the icon, small, ringed 1px in the bar color, used sparingly.
+- Switching tabs, the active indicator slides while the content fades through instead of pushing sideways: tabs are peers, not a stack.
+
+---
+
+**The test:** Use it one-handed on a real phone. Can you reach every primary action with your thumb, tell what each screen is for at a glance, and get back from anywhere without hunting?
