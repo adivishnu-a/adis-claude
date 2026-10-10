@@ -30,6 +30,20 @@ The final output must be an audit report only.
 6. Do not invent issues to make the report look more detailed.
 7. If everything genuinely works well, say so clearly.
 
+## House standard
+
+The user's `~/.claude/CLAUDE.md` is the house standard and outranks this file. Where it is stricter or more specific than this file or WCAG, audit against CLAUDE.md, and count violations as confirmed issues, not observations.
+
+Severity for house-standard violations:
+
+- Craft floor (§7), hardening (§9), copy (§10), and the UX, pattern, and mobile rules (§12–29): rate by user impact, like any other issue.
+- Refused defaults (§11), such as banned fonts, eyebrows, gradients, and card scaffolds: Medium on Persuade and Experience surfaces, Low on Operate and Read surfaces.
+- Touch targets: under 24×24px fails WCAG and is High. 24–43px passes WCAG but misses the 44px house floor and is Medium.
+
+A choice the project's own brief or brand explicitly pins (a named font, palette, or aesthetic) is not a violation (§5: the brief always wins). Cite the brief as evidence.
+
+The house standard changes what counts as a defect, never how the audit runs: stay read-only, fix nothing, mask secrets, and keep the report format.
+
 ## Audit the website across these areas
 
 ### 1. Visual hierarchy and layout

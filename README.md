@@ -12,7 +12,7 @@ My global `CLAUDE.md` for Claude Code: always-on behavioral guidelines that appl
 4. **Interface patterns** — rank then style, filters as decision support, content over banners, polish where it's felt.
 5. **Mobile & touch UI** — rebuild for mobile instead of shrinking, one screen one job, gestures, the bottom bar.
 
-`skills/audit/` is an on-demand `/audit` skill: an independent, read-only pre-launch audit with a weighted score and launch verdict. It runs in a forked subagent with file-editing tools removed. Install by symlinking it into `~/.claude/skills/audit`.
+`skills/audit/` is an on-demand `/audit` skill: an independent, read-only pre-launch audit with a weighted score and launch verdict. It runs in a forked subagent with file-editing tools removed, and audits against `CLAUDE.md` as the house standard, which outranks the audit's own criteria. Install by symlinking it into `~/.claude/skills/audit`.
 
 `AGENTS.md` is the same content for tools that read the AGENTS.md convention (Cursor, Codex, Copilot, etc.). `CLAUDE.md` is the source of truth; if you edit one, mirror the change in the other.
 
